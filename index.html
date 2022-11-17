@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Portfólio Anderson Magro Mattei</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navigation">
+      <ul>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#experiences">Experiência</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <button class="btnScrollToTop" onclick="scrollToTop()">
+      <img src="./assets/up-arrow.svg" alt="arrow-up">
+    </button>
+    <section class="dark-bg">
+      <div class="section-container">
+        <div class="avatar-container">
+          <image src="https://github.com/andersonmdev.png?size=250" alt="avatar image" />
+        </div>
+        <div>
+          <h1>Anderson Magro Mattei</h1>
+          <h3>Desenvolvedor Full Stack</h3>
+        </div>
+        <p>
+          Olá tenho 25 anos, sou formado em Análise e Desenvolvimento de Sistemas e atuo como
+          desenvolvedor Full Stack. Inicie minha carreira em 2019 e atualmente trabalho no desenvolvimento de aplicações
+          com React, React Native e Node.
+          Já atuei também com desenvolvimento de testes automatizados E2E para web e mobile, e trabalhos com
+          Python e C para desenvolvimento de aplicações desktop e integrações com dispositivos IoT.
+        </p>
+      </div>
+    </section>
+    <section id="skills" class="light-bg">
+      <div class="section-container">
+        <h2>Habilidades</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Linguagens</h3>
+            <ul>
+              <li>JavaScript e Typescript</li>
+              <li>Python</li>
+              <li>Dart</li>
+              <li>C/C++</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Front-end</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS e SASS</li>
+              <li>Nextjs e Vitejs</li>
+              <li>React e React Native</li>
+              <li>Flutter</li>
+              <li>Tailwind CSS</li>
+              <li>JQuery e Bootstrap</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Back-end</h3>
+            <ul>
+              <li>Node</li>
+              <li>Express e Fastify</li>
+              <li>REST</li>
+              <li>PostgreSQL</li>
+              <li>MySQL</li>
+              <li>MongoDB</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>DevOps</h3>
+            <ul>
+              <li>Docker</li>
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>Google Cloud</li>
+              <li>Amazon Web Services</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experiences" class="dark-bg">
+      <div class="section-container">
+        <h2>Experiências</h2>
+        <div class="experiences-container">
+          <div>
+            <h3>Desenvolvedor Full Stack</h3>
+            <h5>JULHO DE 2022 - ATUALMENTE</h5>
+            <p>
+              Desenvolvimento de aplicações web com React e mobile com React Native.
+              Desenvolvimento no backend em Node e manutenção da infraestrutura com a plataforma da Google Cloud.
+            </p>
+          </div>
+          <div>
+            <h3>Desenvolvedor Full Stack</h3>
+            <h5>FEVEREIRO DE 2021 - JUNHO DE 2022</h5>
+            <p>
+              Desenvolvimento e manutenção de aplicações com a Stack MERN (MongoDB, Express, React e Node) e
+              Amazon Web Services. Desenvolvimento de aplicações mobile com React Native.
+              Desenvolvimento em Python com foco em processamento de imagem utilizando OpenCV e aplicação desktop com a
+              biblioteca PyQt5.
+            </p>
+          </div>
+          <div>
+            <h3>Estágio como Analista de Testes</h3>
+            <h5>SETEMBRO DE 2019 - SETEMBRO DE 2020</h5>
+            <p>
+              Elaboração de planos de teste e desenvolvimento de testes automatizados para Web e Mobile com Selenium
+              WebDriver e Appium.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="light-bg">
+      <div class="section-container">
+        <h2>Projetos</h2>
+        <div class="cards">
+          <a class="card" href="https://github.com/Andersonmdev/nodejs-clean-architecture-api" target="_blank">
+            <h3>API em Node</h3>
+            <p>
+              Api desenvolvida utilizando os princípios do SOLID e TDD.
+            </p>
+          </a>
+          <a class="card" href="https://github.com/Andersonmdev/next-step-app" target="_blank">
+            <h3>Aplicativo em React Native</h3>
+            <p>
+              Aplicativo desenvolvido para o gerenciamento de projetos e tarefas, desenvolvido utilizando Expo e Native
+              Base.
+            </p>
+          </a>
+          <a class="card" href="https://github.com/Andersonmdev/minesweeper-flutter-app" target="_blank">
+            <h3>Aplicativo em Flutter</h3>
+            <p>
+              Aplicativo com a implementação do jogo de Campo Minado em Flutter.
+            </p>
+          </a>
+          <a class="card" href="https://github.com/Andersonmdev/paladins-info-discord-bot" target="_blank">
+            <h3>Discord Bot</h3>
+            <p>
+              Bot para o Discord desenvolvido em Node com integração da API do jogo Paladins, a fim de fornecer
+              comandos para acessar informações do jogo.
+            </p>
+          </a>
+          <a class="card" href="https://github.com/Andersonmdev" target="_blank">
+            <h3>Outros Projetos</h3>
+            <p>
+              Para outros projetos acesse meu GitHub.
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="dark-bg">
+      <div class="section-container">
+        <h2>Contato</h2>
+        <div>
+          <p>Para entrar em contato acesse os links abaixo</p>
+          <div class="contact-container">
+            <a href="mailto:andersonmmdev@gmail.com" target="_blank">
+              <img src="./assets/email.svg" alt="github-icon">
+            </a>
+            <a href="https://github.com/Andersonmdev" target="_blank">
+              <img src="./assets/github.svg" alt="github-icon">
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=5554996840236&text=Oi" target="_blank">
+              <img src="./assets/whatsapp.svg" alt="github-icon">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+<script src="./script.js" type='text/javascript'></script>
+
+</html>
