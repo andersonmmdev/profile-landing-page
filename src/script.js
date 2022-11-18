@@ -18,3 +18,11 @@ function changeVisibility() {
     btnScrollToTop.style.display = "none";
   }
 }
+
+function changeToBR() {
+  window.location = "ptBR-index.html";
+}
+
+function changeToUS() {
+  window.location = "index.html";
+}

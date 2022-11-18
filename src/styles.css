@@ -18,12 +18,22 @@ header {
   position: fixed;
   top: 0;
   display: flex;
-  width: 100%;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  padding: 0px 2rem;
   height: 4rem;
   background-color: #37485F;
   box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.5);
+}
+
+.lang-container {
+  display: flex;
+  width: 25%;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
 }
 
 p {
@@ -32,6 +42,19 @@ p {
 
 h2 {
   font-family: 'Mochiy Pop One', 'Roboto', sans-serif;
+}
+
+.btnLang {
+  margin: 0;
+  padding: 0;
+  width: 30px;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+.btnLang:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.5);
 }
 
 .navigation ul {
@@ -193,7 +216,7 @@ section {
   height: 100%;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   header {
     display: none;
   }
