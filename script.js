@@ -20,9 +20,9 @@ function changeVisibility() {
 }
 
 function changeToBR() {
-  window.location = "ptBR-index.html";
+  window.location = "index.html";
 }
 
 function changeToUS() {
-  window.location = "index.html";
+  window.location = "enindex.html";
 }
