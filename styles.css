@@ -96,6 +96,8 @@ section {
   border-radius: 20px;
   border: none;
   cursor: pointer;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
 
 .btncurriculum a {
@@ -156,6 +158,8 @@ section {
   background-color: #37474F;
   border-radius: 10px;
   box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.5);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
 
 .cards a {
@@ -164,6 +168,8 @@ section {
 
 .card:hover {
   box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.8);
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
 }
 
 .card>h3 {
@@ -249,5 +255,19 @@ section {
     bottom: 10px;
     width: 40px;
     height: 40px;
+  }
+}
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
   }
 }
