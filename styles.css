@@ -26,6 +26,7 @@ header {
   height: 4rem;
   background-color: #37485F;
   box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 .lang-container {
@@ -155,7 +156,7 @@ section {
   height: 260px;
   padding: 1rem;
   gap: 1rem;
-  background-color: #37474F;
+  background-color: #374756;
   border-radius: 10px;
   box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.5);
   -webkit-transition-duration: 0.3s;
