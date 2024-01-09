@@ -33,7 +33,7 @@
 }
 
 .menu li a:hover {
-  background-color: var(--secondary-dark);
+  background-color: var(--secondary-main);
 }
 
 .menu-toggle {

@@ -14,6 +14,7 @@ footer p {
   display: flex;
   justify-content: center;
   margin-top: 10px;
+  margin-bottom: 24px;
 }
 
 .contact-links a {
