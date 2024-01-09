@@ -1,5 +1,13 @@
-# Profile Landing Page
+# Personal Landing Page Profile
 
-Project with profile landing page for the [GitHub Pages](https://pages.github.com/).
+## Description
 
-Can access the page at [here](https://andersonmdev.github.io/profile-landing-page).
+This project consists of a profile landing page, providing an introduction to my skills, experience and contact information.
+
+The landing page is hosted using [GitHub Pages](https://pages.github.com/).
+
+Can access the page [here](https://andersonmdev.github.io/profile-landing-page).
+
+## License
+
+This project is licensed under the [MIT License](/LICENSE.md).
