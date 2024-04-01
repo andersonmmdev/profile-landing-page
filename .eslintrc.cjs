@@ -1,26 +1,26 @@
 module.exports = {
   env: { browser: true, es2020: true, node: true },
   extends: [
-    'eslint:recommended',
-    'plugin:import/recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:react-hooks/recommended',
-    'plugin:prettier/recommended',
+    "eslint:recommended",
+    "plugin:import/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:prettier/recommended",
   ],
   ignorePatterns: [
     "dist",
     "scripts/*",
-    // ".eslintrc.cjs",
+    ".eslintrc.cjs",
     "prettierrc.js",
     "vite.config.ts",
   ],
-  parser: '@typescript-eslint/parser',
+  parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion: "latest",
     sourceType: "module",
     project: "./tsconfig.json",
   },
-  plugins: ['react-refresh', 'prettier'],
+  plugins: ["react-refresh", "prettier"],
   rules: {
     "no-console": "error",
     "import/no-unresolved": "off",
@@ -80,4 +80,4 @@ module.exports = {
       },
     ],
   },
-}
+};
