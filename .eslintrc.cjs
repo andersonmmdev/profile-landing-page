@@ -13,6 +13,8 @@ module.exports = {
     ".eslintrc.cjs",
     "prettierrc.js",
     "vite.config.ts",
+    "postcss.config.js",
+    "tailwind.config.js",
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {

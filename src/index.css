@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *,
 *::before,
 *::after {
@@ -18,7 +22,7 @@ html {
 }
 
 body {
-  height: 100vh;
+  min-height: 100dvh;
   color: #000000;
   background: #ffffff;
 }
