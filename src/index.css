@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --bg-color: #0a192f;
+  --text-color: #8892b0;
+  --text-gradient-color-from: #6dc7eb;
+  --text-gradient-color-to: rgb(25, 101, 96);
+  --scrollbar-bg-color: #495670;
+}
+
 *,
 *::before,
 *::after {
@@ -16,15 +24,23 @@
 }
 
 html {
+  box-sizing: border-box;
+  width: 100%;
   font-size: 16px;
   font-family: 'Montserrat', "Arial", "sans-serif";
-  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-bg-color) var(--bg-color);
 }
 
 body {
+  width: 100%;
   min-height: 100dvh;
-  color: #000000;
-  background: #ffffff;
+  overflow-x: hidden;
+  line-height: 1.4;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  -webkit-font-smoothing: antialiased;
 }
 
 img {
@@ -34,4 +50,39 @@ img {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+@keyframes fade-down-enter {
+  0% {
+    opacity: 0;
+    transform: translateY(-24px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(to right, var(--text-gradient-color-from), var(--text-gradient-color-to));
+  background-clip: var(--text-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.animate-fade-down-enter-done {
+  animation: fade-down-enter ease-in-out;
+}
+
+.animate-fade-down-duration-1 {
+  animation-duration: 300ms;
+}
+
+.animate-fade-down-duration-2 {
+  animation-duration: 500ms;
+}
+
+.animate-fade-down-duration-3 {
+  animation-duration: 700ms;
 }
