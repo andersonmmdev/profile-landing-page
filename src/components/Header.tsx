@@ -34,8 +34,8 @@ export function Header() {
       <nav className="hidden h-full items-center justify-center sm:flex">
         <ul className="flex gap-16">
           <HeaderItem href="#about" text="Sobre" />
+          <HeaderItem href="#background" text="Experiência" />
           <HeaderItem href="#projects" text="Projetos" />
-          <HeaderItem href="#contact" text="Contato" />
         </ul>
       </nav>
       <div className="flex pt-2 sm:hidden">
@@ -53,8 +53,8 @@ export function Header() {
           className={`${isOpen ? 'flex' : 'hidden'} flex-col gap-4 text-center sm:hidden`}
         >
           <HeaderItem href="#about" text="Sobre" />
+          <HeaderItem href="#background" text="Experiência" />
           <HeaderItem href="#projects" text="Projetos" />
-          <HeaderItem href="#contact" text="Contato" />
         </ul>
       </nav>
       <div className="hidden h-0.5 bg-gradient-to-r from-slate-900 via-slate-500 to-slate-900 sm:block" />

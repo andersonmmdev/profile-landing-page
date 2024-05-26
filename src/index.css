@@ -23,6 +23,11 @@
   src: local('Montserrat'), url('./assets/fonts/Montserrat-VariableFont_wght.ttf') format('truetype'),
 }
 
+@font-face {
+  font-family: 'Lora';
+  src: local('Lora'), url('./assets/fonts/Lora-VariableFont_wght.ttf') format('truetype');
+}
+
 html {
   box-sizing: border-box;
   width: 100%;

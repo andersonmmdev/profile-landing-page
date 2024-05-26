@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import Lottie from 'react-lottie';
 
-import { TypewriterEffect } from './shared/TypewriterEffect';
+import { TypewriterEffect } from './TypewriterEffect';
+
 import mailAnimation from '../assets/lotties/mail-animation.json';
 import githubAnimation from '../assets/lotties/github-animation.json';
 import spotifyAnimation from '../assets/lotties/spotify-animation.json';
@@ -22,13 +23,13 @@ export function About() {
 
   return (
     <div
-      className={`flex transform flex-col md:px-8 xl:px-24
-      ${showAnimation ? 'translate-x-0' : '-translate-x-full'} 
+      className={`flex transform flex-col
+      ${showAnimation ? 'translate-y-0' : '-translate-y-full'} 
       transition-transform duration-1000 ease-in-out`}
     >
-      <section id="about" className="mt-3 flex flex-col sm:mt-8">
+      <section id="about" className="flex flex-col">
         <div className="flex items-center justify-between">
-          <div className="flex flex-col justify-center gap-3">
+          <div className="flex flex-col justify-center gap-4">
             <div>
               <h1 className="flex gap-3 text-2xl text-slate-100 xl:text-3xl">
                 Anderson Magro Mattei
@@ -131,7 +132,7 @@ export function About() {
               />
             </div>
           </div>
-          <div className="hidden min-w-fit items-center lg:flex">
+          <div className="ml-2 hidden min-w-fit items-center lg:flex">
             <img
               src="https://github.com/andersonmdev.png?size=244"
               alt="Profile"
@@ -141,7 +142,7 @@ export function About() {
           </div>
         </div>
         <div className="mt-6 flex flex-col gap-4 lg:mt-12 lg:flex-row lg:justify-between">
-          <h1 className="items-center text-center text-4xl font-bold text-cyan-400 lg:flex lg:text-5xl">
+          <h1 className="font-lora items-center text-center text-4xl font-bold text-cyan-500 lg:flex lg:text-5xl">
             Sobre mim
           </h1>
           <p className="max-full text-justify leading-6 text-slate-100 lg:w-3/5 lg:text-xl">
