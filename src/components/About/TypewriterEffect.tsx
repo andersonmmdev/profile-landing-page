@@ -4,11 +4,11 @@ type Props = {
   words: string[];
   typingSpeed?: number;
   switchWordDelay?: number;
-  style?: string;
+  className?: string;
 };
 
 export function TypewriterEffect(props: Props) {
-  const { words, typingSpeed = 100, switchWordDelay = 4000, style } = props;
+  const { words, typingSpeed = 100, switchWordDelay = 4000, className } = props;
 
   const [displayText, setDisplayText] = useState('');
   const [isTyping, setIsTyping] = useState(true);
@@ -58,7 +58,7 @@ export function TypewriterEffect(props: Props) {
 
   return (
     <span
-      className={`${isAwaitingSwitch ? 'text-cyan-400' : 'gradient-text'} ${style}`}
+      className={`${isAwaitingSwitch ? 'text-cyan-400' : 'gradient-text'} ${className}`}
     >
       {displayText}
     </span>
