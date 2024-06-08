@@ -14,9 +14,7 @@ export function AnimatedCard({ children, className }: Props) {
   return (
     <div
       ref={ref}
-      className={`relative flex w-full flex-col gap-3 self-center rounded-lg border
-      border-slate-700 bg-slate-800 p-4 shadow-md shadow-slate-400/40 xl:w-4/5 2xl:w-3/4
-      ${inView ? 'animate-slide-in-left' : 'opacity-0'} ${className}`}
+      className={`relative rounded-lg border border-slate-700 bg-slate-800 p-4 shadow-md shadow-slate-400/40 ${inView ? 'animate-slide-in-left' : 'opacity-0'} ${className}`}
     >
       {children}
     </div>

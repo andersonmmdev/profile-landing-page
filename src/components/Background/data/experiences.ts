@@ -60,7 +60,7 @@ export const experiences = [
     role: 'Estágio de Analista de Testes',
     company: 'GEOSAPIENS TECNOLOGIA E INFORMACAO',
     period: '2019 - 2020',
-    link: 'https://www.gesec.com.br/',
+    link: 'https://www.web.coletum.com/',
     description:
       'Atuei no levantamento de requisitos, na criação de planos de teste e no desenvolvimento de testes automatizados E2E para as plataformas web e mobile da empresa.',
     stack: ['Javascript', 'Appium', 'Selenium', 'CodeceptJS', 'MochaJS'],

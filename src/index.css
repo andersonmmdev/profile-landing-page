@@ -66,16 +66,16 @@ body {
 
 .timeline-card:nth-child(odd)::before {
   left: -20px;
-  top: -19px;
-  bottom: -19px;
+  top: -26px;
+  bottom: -28px;
   border-width: 4px 0 4px 4px;
   border-radius: 34px 0 0 34px;
 }
 
 .timeline-card:nth-child(even)::before {
   right: -20px;
-  top: -19px;
-  bottom: -19px;
+  top: -26px;
+  bottom: -28px;
   border-width: 4px 4px 4px 0;
   border-radius: 0 34px 34px 0;
 }

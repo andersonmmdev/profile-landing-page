@@ -1,20 +1,19 @@
 export const freelances = [
   {
-    title: 'Desenvolvimento de aplicação web',
+    title: 'Aplicação web para corretora de commodities agrícolas',
     description:
-      'Desenvolvimento de uma plataforma para um corretor online de commodities agrícolas.',
-    link: 'https://agro-rs.agr.br',
+      'Desenvolvimento de uma plataforma para corretores de commodities agrícolas, com integração de APIs de cotações e chatbot. Contendo ainda dashboard para gerenciar clientes, contratos e cotações.',
+    links: ['https://agro-rs.agr.br'],
+    stack: ['React', 'Node.js', 'PostgreSQL', 'Google Cloud', 'Firebase'],
   },
   {
-    title: 'Desenvolvimento de site',
+    title: 'Landing pages personalizadas',
     description:
-      'Desenvolvimento e manutenção de site para empresa de consultoria.',
-    link: 'https://chconsultoriaegestao.com.br/',
-  },
-  {
-    title: 'Desenvolvimento de site',
-    description:
-      'Desenvolvimento e manutenção de site para grupo de franquias de exames e análises clinicas.',
-    link: 'https://examefranquias.com.br/',
+      'Desenvolvimento e manutenção de sites institucionais para empresas de diversos segmentos.',
+    links: [
+      'https://chconsultoriaegestao.com.br/',
+      'https://examefranquias.com.br/',
+    ],
+    stack: ['HTML', 'CSS', 'Javascript'],
   },
 ];

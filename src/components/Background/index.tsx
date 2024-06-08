@@ -18,7 +18,7 @@ export function Background() {
       <SectionTitle animated text="Experiência" />
       <div
         ref={ref}
-        className={`mb-4 flex flex-col gap-8 ${inView ? 'animate-slide-in-left' : 'opacity-0'}`}
+        className={`mb-4 flex flex-col gap-8 xl:gap-12 ${inView ? 'animate-slide-in-left' : 'opacity-0'}`}
       >
         {experiences.map((experience, index) => (
           <TimelineCard key={experience.company} className="timeline-card">

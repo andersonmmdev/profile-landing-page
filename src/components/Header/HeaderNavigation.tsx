@@ -9,7 +9,7 @@ export function HeaderNavigation() {
       setTimeout(() => {
         item.classList.remove('invisible');
         item.classList.add(`animate-slide-down`);
-      }, index * 300);
+      }, index * 200);
     });
   }, []);
 
