@@ -38,7 +38,7 @@ export function Projects() {
                 <h3 className="mt-1 text-2xl font-bold text-cyan-600">
                   {freelance.title}
                 </h3>
-                <p className="mt-2 text-justify text-slate-100">
+                <p className="mt-2 text-pretty text-justify text-slate-100">
                   {freelance.description}
                 </p>
                 <div className="mt-1">
@@ -77,11 +77,6 @@ export function Projects() {
                 <p className="mt-2 text-justify text-slate-100">
                   {project.description}
                 </p>
-                <div>
-                  {project.stack.map((tech) => (
-                    <Chip key={tech} text={tech} />
-                  ))}
-                </div>
               </div>
               <SeeHereButton href={project.link} />
             </div>
