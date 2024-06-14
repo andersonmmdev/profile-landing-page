@@ -5,7 +5,7 @@ export const experiences = [
     period: '2023 - Presente',
     link: 'https://genialnet.inf.br/',
     description:
-      'Atuo como desenvolvedor front-end na modernização e desenvolvimento de um sistema Web de gestão de processos com foco na produção de refeições coletivas. Os principais desafios técnicos incluem a integração de múltiplos módulos complexos, como Planejamento, Análise de Custos, Emissão de Notas Fiscais, MD-e, PDV e outros, em uma única plataforma coesa. A necessidade de escalabilidade e segurança robusta também é crucial, especialmente ao lidar com grandes volumes de dados. A ênfase na responsividade e acessibilidade foi crucial para atender aos padrões modernos de usabilidade e inclusão, proporcionando uma experiência otimizada para todos os usuários.',
+      'Atuo como desenvolvedor front-end na modernização de um sistema Web de gestão de processos com foco na produção de refeições coletivas. Os principais desafios técnicos incluem a integração de múltiplos módulos complexos, como Planejamento, Análise de Custos, Emissão de Notas Fiscais, MD-e, PDV e outros, em uma única plataforma coesa. A necessidade de escalabilidade e segurança robusta também é crucial, especialmente ao lidar com grandes volumes de dados. Além da ênfase na responsividade e acessibilidade para atender aos padrões modernos de usabilidade e inclusão, proporcionando uma experiência otimizada para todos os usuários.',
     stack: [
       'TypeScript',
       'React',
@@ -45,7 +45,7 @@ export const experiences = [
     period: '2020 - 2022',
     link: 'https://www.gesec.com.br/',
     description:
-      'Atuei no desenvolvimento de uma aplicação VMS (Sistema de Gerenciamento de Vídeo), em um aplicativo móvel voltado para cidades inteligentes, além de uma aplicação web para gestão de acesso de pessoas e veículos. Durante o projeto, realizei integrações essenciais com câmeras e sensores, além de trabalhar intensamente com processamento avançado de imagens para assegurar a eficácia e precisão das funcionalidades implementadas. Colaborei ativamente com a equipe para garantir a integridade e a segurança dos dados, além de otimizar o desempenho da aplicação para atender às demandas complexas de um ambiente urbano moderno.',
+      'Atuei no desenvolvimento de uma aplicação VMS (Sistema de Gerenciamento de Vídeo), em um aplicativo móvel voltado para cidades inteligentes e uma aplicação web para gestão de acesso de pessoas e veículos. Durante o projeto, realizei integrações essenciais com câmeras e sensores, além de trabalhar intensamente com processamento avançado de imagens para assegurar a eficácia e precisão das funcionalidades implementadas. Colaborei ativamente com a equipe para garantir a integridade e a segurança dos dados, além de otimizar o desempenho da aplicação para atender às demandas complexas de um ambiente urbano moderno.',
     stack: [
       'Javascript',
       'Python',

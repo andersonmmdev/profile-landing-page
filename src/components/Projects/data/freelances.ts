@@ -1,8 +1,8 @@
 export const freelances = [
   {
-    title: 'Aplicação web para corretora de commodities agrícolas',
+    title: 'Corretora de commodities agrícolas',
     description:
-      'Apliquei meus conhecimentos no desenvolvimento de uma aplicação web para uma corretora de commodities agrícolas. A plataforma em questão inclui integração de APIs de cotações e um chatbot, além de um dashboard completo para gerenciar clientes, contratos e cotações.',
+      'Desenvolvimento de uma aplicação web para uma corretora de commodities agrícolas. Na qual a plataforma em questão possui integrações com APIs de cotações, chatbot e dashboard completo para gerenciar clientes, contratos e cotações.',
     links: ['https://agro-rs.agr.br'],
     stack: [
       'TypeScript',
