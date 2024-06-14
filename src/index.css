@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color: #0a192f;
+  --border-color: #0369a1;
+  --text-color: #8892b0;
+  --text-gradient-color-from: #6dc7eb;
+  --text-gradient-color-to: rgb(25, 101, 96);
+  --scrollbar-bg-color: #495670;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat'), url('./assets/fonts/Montserrat-VariableFont_wght.ttf') format('truetype'),
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: local('Lora'), url('./assets/fonts/Lora-VariableFont_wght.ttf') format('truetype');
+}
+
+html {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 16px;
+  font-family: 'Montserrat', "Arial", "sans-serif";
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-bg-color) var(--bg-color);
+}
+
+body {
+  width: 100%;
+  min-height: 100dvh;
+  overflow-x: hidden;
+  line-height: 1.4;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  -webkit-font-smoothing: antialiased;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, var(--text-gradient-color-from), var(--text-gradient-color-to));
+  background-clip: var(--text-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.timeline-card::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  border: solid var(--border-color);
+}
+
+.timeline-card:nth-child(odd)::before {
+  left: -20px;
+  top: -26px;
+  bottom: -28px;
+  border-width: 4px 0 4px 4px;
+  border-radius: 34px 0 0 34px;
+}
+
+.timeline-card:nth-child(even)::before {
+  right: -20px;
+  top: -26px;
+  bottom: -28px;
+  border-width: 4px 4px 4px 0;
+  border-radius: 0 34px 34px 0;
+}
+
+.timeline-card:first-child::before {
+  border-top: 0;
+  border-top-left-radius: 0;
+}
+
+.timeline-card:last-child::before {
+  border-bottom: 0;
+  border-bottom-right-radius: 0;
+}
+
+.timeline-dot-left::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: -26px;
+  background: #fff;
+  border-radius: 999px;
+  border: 3px solid var(--text-color);
+}
+
+
+.timeline-dot-right::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  right: -26px;
+  background: #fff;
+  border-radius: 999px;
+  border: 3px solid var(--text-color);
+}
+
+@media (max-width: 1279px) {
+  .timeline-card::before {
+    border: none;
+  }
+
+  .timeline-dot-left::before,
+  .timeline-dot-right::before {
+    display: none;
+  }
+}
