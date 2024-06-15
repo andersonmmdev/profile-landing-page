@@ -24,12 +24,17 @@ export default {
           '0%': { transform: 'translateX(-100%)', opacity: '0' },
           '100%': { transform: 'translateX(0)', opacity: '1' },
         },
+        'flip-y': {
+          '0%': { transform: 'rotateY(0deg)' },
+          '100%': { transform: 'rotateY(360deg)' },
+        },
       },
       animation: {
         appear: 'appear 2s ease-in-out',
         'move-y': 'move-y 0.1s ease-in-out forwards',
         'slide-down': 'slide-down 0.8s ease-out forwards',
         'slide-in-left': 'slide-in-left 1s ease-out forwards',
+        'flip-y': 'flip-y 0.5s ease-in-out forwards',
       },
     },
   },

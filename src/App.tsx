@@ -3,6 +3,7 @@ import { About } from './components/About';
 import { Background } from './components/Background';
 import { Projects } from './components/Projects';
 import { Footer } from './components/Footer';
+import { Contact } from './components/Contact';
 import { ScrollTopButton } from './components/shared/ScrollTopButton';
 
 export default function App() {
@@ -13,6 +14,7 @@ export default function App() {
         <About />
         <Background />
         <Projects />
+        <Contact />
         <ScrollTopButton />
       </main>
       <Footer />

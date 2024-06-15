@@ -1,38 +1,21 @@
-import { useInView } from 'react-intersection-observer';
-
 import { AnimatedCard } from '../shared/AnimatedCard';
 import { SeeHereButton } from '../shared/SeeHereButton';
 
 import { freelances } from './data/freelances';
 import { projects } from './data/projects';
 import { Chip } from '../shared/Chip';
+import { SectionTitle } from '../shared/SectionTitle';
 
 export function Projects() {
-  const { ref: ref1, inView: inView1 } = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
-
-  const { ref: ref2, inView: inView2 } = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
-
   return (
     <section id="projects" className="flex flex-col gap-8 sm:gap-12 xl:gap-16">
       <div className="flex flex-col gap-8">
-        <h1
-          ref={ref1}
-          className={`items-center text-center font-lora text-4xl font-bold text-cyan-500 lg:text-5xl
-          ${inView1 ? 'animate-appear' : 'opacity-0'}`}
-        >
-          Projetos freelance
-        </h1>
+        <SectionTitle text="Projetos freelance" animated />
         <div className="mb-4 flex flex-wrap justify-center gap-8">
           {freelances.map((freelance, index) => (
             <AnimatedCard
               key={index}
-              className="min-w-[400px] max-w-[600px] flex-1"
+              className="min-w-full max-w-[600px] flex-1 lg:min-w-[400px]"
             >
               <div className="flex h-full flex-col justify-between gap-3">
                 <div>
@@ -59,18 +42,12 @@ export function Projects() {
         </div>
       </div>
       <div className="flex flex-col gap-8">
-        <h1
-          ref={ref2}
-          className={`items-center text-center font-lora text-4xl font-bold text-cyan-500 lg:text-5xl
-          ${inView2 ? 'animate-appear' : 'opacity-0'}`}
-        >
-          Projetos pessoais
-        </h1>
+        <SectionTitle text="Projetos pessoais" animated />
         <div className="mb-4 flex flex-wrap justify-center gap-8">
           {projects.map((project, index) => (
             <AnimatedCard
               key={index}
-              className="min-w-[400px] max-w-[600px] flex-1"
+              className="min-w-full max-w-[600px] flex-1 lg:min-w-[400px]"
             >
               <div className="flex h-full flex-col justify-between gap-3">
                 <div>
