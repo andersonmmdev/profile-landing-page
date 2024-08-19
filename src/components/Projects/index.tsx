@@ -6,7 +6,7 @@ import { projects } from './data/projects';
 import { Chip } from '../shared/Chip';
 import { SectionTitle } from '../shared/SectionTitle';
 
-export function Projects() {
+export default function Projects() {
   return (
     <section id="projects" className="flex flex-col gap-8 sm:gap-12 xl:gap-16">
       <div className="flex flex-col gap-8">
@@ -69,7 +69,7 @@ export function Projects() {
             <a
               href="/"
               target="_blank"
-              className="rounded-sm text-cyan-400 focus:border-cyan-300 focus:outline-none focus:ring-2 focus:ring-cyan-300 focus:ring-opacity-50"
+              className="rounded-sm text-blue-500 focus:border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-opacity-50"
             >
               GitHub
             </a>

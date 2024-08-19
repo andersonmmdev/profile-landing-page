@@ -12,9 +12,5 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "cSpell.words": [
-    "wght",
-    "tailwindcss",
-    "tailwind"
-  ]
+  "cSpell.words": ["wght", "tailwindcss", "tailwind", "lotties", "lottie"]
 }

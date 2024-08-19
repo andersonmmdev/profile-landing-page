@@ -5,9 +5,10 @@ type Props = {
   href: string;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   animationData: any;
+  ariaLabel?: string;
 };
 
-export function AnimatedContactLink({ href, animationData }: Props) {
+export function AnimatedContactLink({ href, animationData, ariaLabel }: Props) {
   const lottieRef = useRef(null);
 
   function handleVisibilityChange() {
@@ -31,6 +32,7 @@ export function AnimatedContactLink({ href, animationData }: Props) {
       target="_blank"
       className="focus: h-14 w-14 rounded-md focus:border-cyan-300 focus:outline-none focus:ring-2 focus:ring-cyan-300 focus:ring-opacity-50 lg:h-16 lg:w-16"
       rel="noreferrer"
+      aria-label={ariaLabel}
     >
       <Lottie
         ref={lottieRef}

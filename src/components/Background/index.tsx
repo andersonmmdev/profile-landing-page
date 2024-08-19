@@ -7,7 +7,7 @@ import { SectionTitle } from '../shared/SectionTitle';
 import { SeeHereButton } from '../shared/SeeHereButton';
 import { Chip } from '../shared/Chip';
 
-export function Background() {
+export default function Background() {
   const { ref: ref, inView: inView } = useInView({
     triggerOnce: true,
     threshold: 0.1,

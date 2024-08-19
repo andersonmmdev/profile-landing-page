@@ -9,6 +9,7 @@ export function ContactButtons() {
           key={button.href}
           href={button.href}
           animationData={button.animationData}
+          ariaLabel={button.ariaLabel}
         />
       ))}
     </div>

@@ -4,7 +4,7 @@ import Lottie from 'react-lottie';
 import { SectionTitle } from '../shared/SectionTitle';
 import animationData from '../../assets/lotties/happy-animation.json';
 
-export function Contact() {
+export default function Contact() {
   const [isFlipped, setIsFlipped] = useState(false);
 
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
@@ -75,6 +75,7 @@ export function Contact() {
             </div>
             <button
               type="submit"
+              aria-label="Enviar mensagem"
               className="rounded-sm bg-cyan-700 px-3 py-2 font-bold text-white hover:bg-cyan-600 focus:outline-none focus:ring-2 focus:ring-cyan-300 focus:ring-opacity-50"
             >
               Enviar

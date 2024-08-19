@@ -23,6 +23,7 @@ export function HeaderMobileMenu() {
     <>
       <div className="flex h-full pr-4 sm:hidden">
         <button
+          aria-label="Menu button"
           className="ml-auto text-2xl text-cyan-400"
           onClick={() => setIsOpen((prev) => !prev)}
         >

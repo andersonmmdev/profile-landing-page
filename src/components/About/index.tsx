@@ -6,7 +6,7 @@ import { ProfilePicture } from './ProfilePicture';
 import { TypewriterEffect } from './TypewriterEffect';
 import { words } from './data/words';
 
-export function About() {
+export default function About() {
   const [showAnimation, setShowAnimation] = useState(false);
 
   useEffect(() => {
