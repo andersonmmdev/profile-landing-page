@@ -12,24 +12,23 @@
     "preview": "vite preview"
   },
   "engines": {
-    "node": ">=14",
-    "npm": ">=7"
+    "node": ">=20",
+    "npm": ">=10"
   },
   "dependencies": {
     "i18next": "^25.3.2",
     "i18next-browser-languagedetector": "^8.2.0",
+    "lottie-react": "^2.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-i18next": "^15.6.0",
     "react-icons": "^5.2.1",
-    "react-intersection-observer": "^9.10.2",
-    "react-lottie": "^1.2.4"
+    "react-intersection-observer": "^9.10.2"
   },
   "devDependencies": {
     "@types/node": "^20.12.2",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
-    "@types/react-lottie": "^1.2.10",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
     "@typescript-eslint/parser": "^7.2.0",
     "@vitejs/plugin-react": "^4.2.1",

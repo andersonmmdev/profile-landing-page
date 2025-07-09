@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Lottie from 'react-lottie';
+import Lottie from 'lottie-react';
 
 import { SectionTitle } from '../shared/SectionTitle';
 import animationData from '../../assets/lotties/happy-animation.json';
@@ -24,16 +24,7 @@ export default function Contact() {
             <p className="text-center text-2xl font-bold text-cyan-500">
               Obrigado pelo contato!
             </p>
-            <Lottie
-              options={{
-                loop: true,
-                autoplay: true,
-                animationData: animationData,
-                rendererSettings: {
-                  preserveAspectRatio: 'xMidYMid slice',
-                },
-              }}
-            />
+            <Lottie animationData={animationData} loop={true} autoplay={true} />
           </>
         ) : (
           <>

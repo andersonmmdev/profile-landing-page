@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
-import Lottie from 'react-lottie';
+import type { LottieRefCurrentProps } from 'lottie-react';
+import Lottie from 'lottie-react';
 
 type Props = {
   href: string;
@@ -9,12 +10,10 @@ type Props = {
 };
 
 export function AnimatedContactLink({ href, animationData, ariaLabel }: Props) {
-  const lottieRef = useRef(null);
+  const lottieRef = useRef<LottieRefCurrentProps>(null);
 
   function handleVisibilityChange() {
     if (document.visibilityState === 'visible' && lottieRef.current) {
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-      //@ts-ignore
       lottieRef.current.play();
     }
   }
@@ -35,15 +34,10 @@ export function AnimatedContactLink({ href, animationData, ariaLabel }: Props) {
       aria-label={ariaLabel}
     >
       <Lottie
-        ref={lottieRef}
-        options={{
-          loop: true,
-          autoplay: true,
-          animationData: animationData,
-          rendererSettings: {
-            preserveAspectRatio: 'xMidYMid slice',
-          },
-        }}
+        lottieRef={lottieRef}
+        animationData={animationData}
+        loop={true}
+        autoplay={true}
       />
     </a>
   );
