@@ -1,0 +1,38 @@
+{
+  "navigation": {
+    "about": "Sobre",
+    "experience": "Experiência",
+    "projects": "Projetos",
+    "contact": "Contato"
+  },
+  "about": {
+    "title": "Sobre mim",
+    "name": "Anderson Magro Mattei",
+    "role": "Desenvolvedor Full Stack",
+    "description": "Atuo como desenvolvedor a mais de 5 anos, criando soluções modernas e escaláveis para aplicações web e mobile.",
+    "words": [
+      "Desenvolvimento ágil",
+      "Desenvolvimento de aplicações Web",
+      "Desenvolvimento de aplicações Mobile",
+      "Desenvolvimento e integração de APIs",
+      "Suporte e manutenção de aplicações"
+    ]
+  },
+  "contact": {
+    "title": "Contato",
+    "name": "Nome",
+    "email": "E-mail",
+    "message": "Mensagem",
+    "send": "Enviar",
+    "thankYou": "Obrigado pelo contato!"
+  },
+  "projects": {
+    "freelance": "Projetos freelance",
+    "personal": "Projetos pessoais",
+    "seeMore": "Para mais projetos acesse meu perfil no",
+    "seeHere": "Veja aqui"
+  },
+  "experience": {
+    "title": "Experiência"
+  }
+}

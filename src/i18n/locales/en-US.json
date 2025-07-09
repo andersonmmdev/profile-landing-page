@@ -1,0 +1,38 @@
+{
+  "navigation": {
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "about": {
+    "title": "About me",
+    "name": "Anderson Magro Mattei",
+    "role": "Full Stack Developer",
+    "description": "I've been working as a developer for over 5 years, creating modern and scalable solutions for web and mobile applications.",
+    "words": [
+      "Agile Development",
+      "Web Application Development",
+      "Mobile Application Development",
+      "API Development and Integration",
+      "Application Support and Maintenance"
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send",
+    "thankYou": "Thank you for contacting!"
+  },
+  "projects": {
+    "freelance": "Freelance projects",
+    "personal": "Personal projects",
+    "seeMore": "For more projects visit my profile on",
+    "seeHere": "See here"
+  },
+  "experience": {
+    "title": "Experience"
+  }
+}

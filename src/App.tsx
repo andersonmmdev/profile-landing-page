@@ -1,4 +1,6 @@
 import { lazy, Suspense } from 'react';
+
+import { useDocumentLang } from './hooks/useDocumentLang';
 import { Loading } from './components/shared/Loading';
 import { ScrollTopButton } from './components/shared/ScrollTopButton';
 
@@ -10,6 +12,8 @@ const Contact = lazy(() => import('./components/Contact'));
 const Footer = lazy(() => import('./components/Footer'));
 
 export default function App() {
+  useDocumentLang();
+
   return (
     <Suspense fallback={<Loading />}>
       <div className="mx-auto max-w-screen-2xl">

@@ -1,11 +1,29 @@
 export const experiences = [
   {
-    role: 'Desenvolvedor Front-End Pleno',
+    role: 'Desenvolvedor Sênior',
+    company: 'GRUPO RBS',
+    period: '2025 - Atualmente',
+    link: 'https://www.gruporbs.com.br/',
+    description:
+      'Atuo como desenvolvedor no time de B2B para implementação de um fluxo completo de aquisição de conteúdo via Pix dentro de um portal de notícias, com integração de um novo gateway de pagamentos e adaptação da arquitetura do produto para suportar segmentação de matérias para venda individual.',
+    stack: [
+      'Javascript',
+      'React',
+      'GraphQL',
+      'Redux',
+      'Reduz Saga',
+      'Docker',
+      'GCP',
+      'GitLab CI/CD',
+    ],
+  },
+  {
+    role: 'Desenvolvedor Sênior',
     company: 'GENIALNET GESTÃO E TECNOLOGIA',
-    period: '2023 - Presente',
+    period: '2023 - 2025',
     link: 'https://genialnet.inf.br/',
     description:
-      'Atuo como desenvolvedor front-end na modernização de um sistema Web de gestão de processos com foco na produção de refeições coletivas. Os principais desafios técnicos incluem a integração de múltiplos módulos complexos, como Planejamento, Análise de Custos, Emissão de Notas Fiscais, MD-e, PDV e outros, em uma única plataforma coesa. A necessidade de escalabilidade e segurança robusta também é crucial, especialmente ao lidar com grandes volumes de dados. Além da ênfase na responsividade e acessibilidade para atender aos padrões modernos de usabilidade e inclusão, proporcionando uma experiência otimizada para todos os usuários.',
+      'Atuei como desenvolvedor na modernização de um sistema Web de gestão de processos com foco na produção de refeições coletivas. Os principais desafios técnicos incluem a integração de múltiplos módulos complexos, como Planejamento, Análise de Custos, Emissão de Notas Fiscais, MD-e, PDV e outros, em uma única plataforma coesa. A necessidade de escalabilidade e segurança robusta também é crucial, especialmente ao lidar com grandes volumes de dados. Além da ênfase na responsividade e acessibilidade para atender aos padrões modernos de usabilidade e inclusão, proporcionando uma experiência otimizada para todos os usuários.',
     stack: [
       'TypeScript',
       'React',
@@ -20,7 +38,7 @@ export const experiences = [
     ],
   },
   {
-    role: 'Desenvolvedor Full Stack Pleno',
+    role: 'Desenvolvedor Pleno',
     company: 'AGRTEC SISTEMA DE INTERMEDIAÇÃO DE NEGÓCIOS',
     period: '2022 - 2023',
     link: 'https://agrtec.com.br/',
@@ -40,7 +58,7 @@ export const experiences = [
     ],
   },
   {
-    role: 'Desenvolvedor Full Stack Júnior',
+    role: 'Desenvolvedor Júnior',
     company: 'GESEC SISTEMAS',
     period: '2020 - 2022',
     link: 'https://www.gesec.com.br/',
