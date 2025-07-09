@@ -1,9 +1,12 @@
 import { useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { FaBars } from 'react-icons/fa';
 
 import { navigation } from './data/navigation';
 
 export function HeaderMobileMenu() {
+  const { t } = useTranslation();
+
   const menuRef = useRef<HTMLElement>(null);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -45,7 +48,7 @@ export function HeaderMobileMenu() {
                 onClick={() => setIsOpen(false)}
                 className="font-lora text-xl font-bold text-slate-100 hover:text-cyan-300"
               >
-                {item.text}
+                {t(item.text)}
               </a>
             </li>
           ))}

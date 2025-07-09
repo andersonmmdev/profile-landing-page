@@ -1,4 +1,12 @@
 {
+  "common": {
+    "seeHere": "Veja aqui"
+  },
+  "seo": {
+    "title": "Portfólio Anderson Magro Mattei",
+    "description": "Portfólio Anderson Magro Mattei - Desenvolvedor Full Stack",
+    "keywords": "Anderson Magro Mattei, desenvolvedor, React, Node, Javascript, TypeScript, portfolio, desenvolvedor web"
+  },
   "navigation": {
     "about": "Sobre",
     "experience": "Experiência",
@@ -7,16 +15,60 @@
   },
   "about": {
     "title": "Sobre mim",
-    "name": "Anderson Magro Mattei",
     "role": "Desenvolvedor Full Stack",
-    "description": "Atuo como desenvolvedor a mais de 5 anos, criando soluções modernas e escaláveis para aplicações web e mobile.",
+    "description1": "Atuo como desenvolvedor a mais de 6 anos, criando soluções",
+    "description2": "modernas",
+    "description3": "e",
+    "description4": "escaláveis",
+    "description5": "para aplicações web e mobile.",
     "words": [
       "Desenvolvimento ágil",
       "Desenvolvimento de aplicações Web",
       "Desenvolvimento de aplicações Mobile",
       "Desenvolvimento e integração de APIs",
       "Suporte e manutenção de aplicações"
-    ]
+    ],
+    "summary": "Especialista no ecossistema React e Node, modernização de sistemas legados e design de arquitetura modular. Estou sempre buscando aprimorar minhas habilidades e conhecimentos, mantendo-me atualizado com as novas tecnologias e tendências do mercado. Focando sempre na entrega de soluções de alto desempenho, centradas no usuário, com impacto mensurável nos negócios."
+  },
+  "experience": {
+    "title": "Experiência",
+    "seniorDeveloper": "Desenvolvedor Sênior",
+    "developer": "Desenvolvedor Pleno",
+    "juniorDeveloper": "Desenvolvedor Júnior",
+    "internQaAnalyst": "Estagiário QA",
+    "descriptionRbs": "Atuo como desenvolvedor no time de B2B para implementação de um fluxo completo de aquisição de conteúdo via Pix dentro de um portal de notícias, com integração de um novo gateway de pagamentos e adaptação da arquitetura do produto para suportar segmentação de matérias para venda individual.",
+    "descriptionGenialnet": "Responsável pelo desenvolvimento front-end na migração de um sistema legado desktop para uma plataforma web, implementando uma arquitetura modular, projetada para garantir escalabilidade, manutenibilidade e baixo acoplamento entre módulos.",
+    "descriptionAgrtec": "Atuação na concepção e desenvolvimento de um aplicativo e-commerce voltado à comercialização de produtos agrícolas. Integração com múltiplas APIs externas (commodities, clima, pagamentos e notícias), ampliando significativamente o valor funcional do produto.",
+    "descriptionGesec": "Participação ativa em uma aplicação web para um sistema VMS (Video Management System) suportando mais de 64 câmeras. Implementação por meio do protocolo WebSocket, de funcionalidades críticas integradas a câmeras IP e sensores, com foco em monitoramento centralizado e controle de acesso em tempo real.",
+    "descriptionGeosapiens": "Estágio na equipe de QA, atuando no levantamento de requisitos, planejamento de testes e desenvolvimento de testes automatizados end-to-end (E2E) para as plataformas web e mobile."
+  },
+  "projects": {
+    "title": "Projetos",
+    "seeMore": "Para mais projetos acesse meu perfil no",
+    "projectCommodities": {
+      "title": "Corretora de commodities agrícolas",
+      "description": "Desenvolvimento de uma aplicação web para uma corretora de commodities agrícolas. Na qual a plataforma em questão possui integrações com APIs de cotações, chatbot e dashboard completo para gerenciar clientes, contratos e cotações."
+    },
+    "customLandingPages": {
+      "title": "Landing pages personalizadas",
+      "description": "Desenvolvimento e manutenção de sites institucionais personalizados para empresas de diversos segmentos, com ênfase em atratividade visual, usabilidade, SEO e responsividade para garantir uma experiência completa aos usuários em diferentes dispositivos."
+    },
+    "nextStepApp": {
+      "title": "Aplicativo mobile - Next Step App",
+      "description": "Aplicativo para gestão de tarefas e metas pessoais, utilizando Expo e React Native. Permite aos usuários organizar suas tarefas diárias, definir metas de curto e longo prazo. O aplicativo oferece uma interface fácil de usar, com opções de temas claros e escuros para atender às preferências dos usuários."
+    },
+    "notificationsMicroservice": {
+      "title": "Micro serviço de notificações",
+      "description": "Micro serviço de notificações utilizando Node e NestJS, criado para o envio e gerenciamento de notificações em tempo real. Este projeto foi utilizado como referência para estudar e explorar o framework NestJS.."
+    },
+    "cleanArchitectureApi": {
+      "title": "Clean Architecture API",
+      "description": "API em Node para cadastro de usuários, utilizada para estudo de padrões de projetos e boas práticas de desenvolvimento. Foi usado como referência para estudar conceitos do Clean Architecture e SOLID."
+    },
+    "discordBot": {
+      "title": "Bot para Discord",
+      "description": "Bot escrito em Javascript, utilizando a API do jogo Paladins para fornecer informações detalhadas sobre partidas e contas dos jogadores, oferecendo uma experiência interativa e informativa dentro da plataforma Discord."
+    }
   },
   "contact": {
     "title": "Contato",
@@ -26,13 +78,9 @@
     "send": "Enviar",
     "thankYou": "Obrigado pelo contato!"
   },
-  "projects": {
-    "freelance": "Projetos freelance",
-    "personal": "Projetos pessoais",
-    "seeMore": "Para mais projetos acesse meu perfil no",
-    "seeHere": "Veja aqui"
-  },
-  "experience": {
-    "title": "Experiência"
+  "footer": {
+    "makeWith": "Feito com",
+    "by": "por",
+    "allRightsReserved": "Todos os direitos reservados"
   }
 }

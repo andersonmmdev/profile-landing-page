@@ -1,5 +1,7 @@
 import { lazy, Suspense } from 'react';
+import { HelmetProvider } from 'react-helmet-async';
 
+import { Seo } from './components/Seo';
 import { Loading } from './components/shared/Loading';
 import { ScrollTopButton } from './components/shared/ScrollTopButton';
 
@@ -12,18 +14,21 @@ const Footer = lazy(() => import('./components/Footer'));
 
 export default function App() {
   return (
-    <Suspense fallback={<Loading />}>
-      <div className="mx-auto max-w-screen-2xl">
-        <Header />
-        <main className="my-3 flex flex-col justify-center gap-8 overflow-hidden px-4 sm:mt-8 sm:gap-12 md:px-8 xl:gap-16 xl:px-24">
-          <About />
-          <Background />
-          <Projects />
-          <Contact />
-          <ScrollTopButton />
-        </main>
-        <Footer />
-      </div>
-    </Suspense>
+    <HelmetProvider>
+      <Seo />
+      <Suspense fallback={<Loading />}>
+        <div className="mx-auto max-w-screen-2xl">
+          <Header />
+          <main className="my-3 flex flex-col justify-center gap-8 overflow-hidden px-4 sm:mt-8 sm:gap-12 md:px-8 xl:gap-16 xl:px-24">
+            <About />
+            <Background />
+            <Projects />
+            <Contact />
+            <ScrollTopButton />
+          </main>
+          <Footer />
+        </div>
+      </Suspense>
+    </HelmetProvider>
   );
 }

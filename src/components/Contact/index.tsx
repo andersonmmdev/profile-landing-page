@@ -1,10 +1,12 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import Lottie from 'lottie-react';
 
 import { SectionTitle } from '../shared/SectionTitle';
 import animationData from '../../assets/lotties/happy-animation.json';
 
 export default function Contact() {
+  const { t } = useTranslation();
   const [isFlipped, setIsFlipped] = useState(false);
 
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
@@ -14,7 +16,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="flex flex-col gap-8 sm:gap-12 xl:gap-16">
-      <SectionTitle text="Contato" animated />
+      <SectionTitle text={t('contact.title')} animated />
       <form
         className={`m-auto flex h-[350px] w-full flex-col gap-4 pb-2 transition-transform duration-500 sm:max-w-[600px] ${isFlipped ? 'animate-flip-y' : ''}`}
         onSubmit={handleSubmit}
@@ -22,7 +24,7 @@ export default function Contact() {
         {isFlipped ? (
           <>
             <p className="text-center text-2xl font-bold text-cyan-500">
-              Obrigado pelo contato!
+              {t('contact.thankYou')}
             </p>
             <Lottie animationData={animationData} loop={true} autoplay={true} />
           </>
@@ -30,7 +32,7 @@ export default function Contact() {
           <>
             <div className="flex flex-col gap-1">
               <label htmlFor="name" className="font-bold text-cyan-500">
-                Nome
+                {t('contact.name')}
               </label>
               <input
                 required
@@ -42,7 +44,7 @@ export default function Contact() {
             </div>
             <div className="flex flex-col gap-1">
               <label htmlFor="email" className="font-bold text-cyan-500">
-                E-mail
+                {t('contact.email')}
               </label>
               <input
                 required
@@ -54,7 +56,7 @@ export default function Contact() {
             </div>
             <div className="flex flex-col gap-1">
               <label htmlFor="message" className="font-bold text-cyan-500">
-                Mensagem
+                {t('contact.message')}
               </label>
               <textarea
                 required
@@ -69,7 +71,7 @@ export default function Contact() {
               aria-label="Enviar mensagem"
               className="rounded-sm bg-cyan-700 px-3 py-2 font-bold text-white hover:bg-cyan-600 focus:outline-none focus:ring-2 focus:ring-cyan-300 focus:ring-opacity-50"
             >
-              Enviar
+              {t('contact.send')}
             </button>
           </>
         )}

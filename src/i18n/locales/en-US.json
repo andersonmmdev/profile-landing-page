@@ -1,4 +1,12 @@
 {
+  "common": {
+    "seeHere": "See here"
+  },
+  "seo": {
+    "title": "Anderson Magro Mattei Portfolio",
+    "description": "Anderson Magro Mattei Portfolio - Full Stack Developer specialized in React, Node.js and TypeScript",
+    "keywords": "Anderson Magro Mattei, developer, React, Node, Javascript, TypeScript, portfolio, web developer"
+  },
   "navigation": {
     "about": "About",
     "experience": "Experience",
@@ -7,16 +15,60 @@
   },
   "about": {
     "title": "About me",
-    "name": "Anderson Magro Mattei",
-    "role": "Full Stack Developer",
-    "description": "I've been working as a developer for over 5 years, creating modern and scalable solutions for web and mobile applications.",
+    "role": "Software Engineer",
+    "description1": "Software Engineer with 6 years of experience, building",
+    "description2": "modern",
+    "description3": "and",
+    "description4": "scalable",
+    "description5": "solutions for web and mobile applications.",
     "words": [
       "Agile Development",
       "Web Application Development",
       "Mobile Application Development",
-      "API Development and Integration",
+      "Backend Development",
       "Application Support and Maintenance"
-    ]
+    ],
+    "summary": "Specialist in the React and Node ecosystem, legacy system modernization and modular architecture design. I am always looking to improve my skills and knowledge, staying updated with new technologies and market trends. Focusing on delivering high-performance, user-centered solutions with measurable business impact."
+  },
+  "experience": {
+    "title": "Experience",
+    "seniorDeveloper": "Senior Developer",
+    "developer": "Mid-level Developer",
+    "juniorDeveloper": "Junior Developer",
+    "internQaAnalyst": "QA Intern",
+    "descriptionRbs": "Designed and implemented a complete Pix-based content monetization flow within a major news portal. Integrated a new payment gateway and adapted the product architecture to support per-article segmentation and individual purchases. Enabled access to a broader audience less likely to subscribe to recurring plans, increasing conversion through one-time purchases.",
+    "descriptionGenialnet": "Responsible for front-end development in migrating a legacy desktop system to a web platform, implementing a modular architecture designed to ensure scalability, maintainability, and low coupling between modules. Designed and implemented a proprietary design system, enhancing brand consistency and significantly accelerating the development lifecycle of new modules.",
+    "descriptionAgrtec": "Involved in the design and development of an e-commerce application focused on agricultural products. Integrated multiple external APIs (commodities, weather, payments, and news), significantly enhancing the functional value of the product.",
+    "descriptionGesec": "Actively participated in a web application for a Video Management System (VMS) supporting over 64 cameras. Implemented critical functionalities integrated with IP cameras and sensors via WebSocket protocol, focusing on centralized monitoring and real-time access control. Led equipment certification efforts across multiple manufacturers, working with proprietary SDKs, REST APIs, and the ONVIF standard.",
+    "descriptionGeosapiens": "Interned in the QA team, working on requirements gathering, test planning, and developing end-to-end (E2E) automated tests for web and mobile platforms."
+  },
+  "projects": {
+    "title": "Projects",
+    "seeMore": "For more projects visit my profile on",
+    "projectCommodities": {
+      "title": "Agricultural Commodities Broker",
+      "description": "Developed a web application for an agricultural commodities broker. The platform includes integrations with APIs for quotes, chatbot, and a comprehensive dashboard to manage clients, contracts, and quotes."
+    },
+    "customLandingPages": {
+      "title": "Custom Landing Pages",
+      "description": "Developed and maintained custom institutional websites for companies across various sectors, focusing on visual appeal, usability, SEO, and responsiveness to ensure a complete user experience across different devices."
+    },
+    "nextStepApp": {
+      "title": "Next Step App",
+      "description": "A mobile app for task and personal goal management, built with Expo and React Native. It allows users to organize daily tasks and set short- and long-term goals. The app features an easy-to-use interface with light and dark themes to suit user preferences."
+    },
+    "notificationsMicroservice": {
+      "title": "Notifications Microservice",
+      "description": "A notifications microservice built with Node and NestJS, designed for real-time notification management. This project served as a reference for studying and exploring the NestJS framework."
+    },
+    "cleanArchitectureApi": {
+      "title": "Clean Architecture API",
+      "description": "A Node.js REST API for user registration, used to study design patterns and best development practices. It served as a reference for learning about Clean Architecture and SOLID principles."
+    },
+    "discordBot": {
+      "title": "Discord Bot",
+      "description": "A Discord bot written in JavaScript, utilizing the Paladins game API to provide detailed information about player accounts and matches, offering an interactive and informative experience within the Discord platform."
+    }
   },
   "contact": {
     "title": "Contact",
@@ -26,13 +78,9 @@
     "send": "Send",
     "thankYou": "Thank you for contacting!"
   },
-  "projects": {
-    "freelance": "Freelance projects",
-    "personal": "Personal projects",
-    "seeMore": "For more projects visit my profile on",
-    "seeHere": "See here"
-  },
-  "experience": {
-    "title": "Experience"
+  "footer": {
+    "makeWith": "Made with",
+    "by": "by",
+    "allRightsReserved": "All rights reserved"
   }
 }

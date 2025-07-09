@@ -1,18 +1,18 @@
 export const navigation = [
   {
     href: '#about',
-    text: 'Sobre',
+    text: 'navigation.about',
   },
   {
     href: '#background',
-    text: 'Experiência',
+    text: 'navigation.experience',
   },
   {
     href: '#projects',
-    text: 'Projetos',
+    text: 'navigation.projects',
   },
   {
     href: '#contact',
-    text: 'Contato',
+    text: 'navigation.contact',
   },
 ];

@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 
 type Props = {
@@ -5,6 +6,8 @@ type Props = {
 };
 
 export function SeeHereButton({ href }: Props) {
+  const { t } = useTranslation();
+
   return (
     <a
       href={href}
@@ -14,7 +17,7 @@ export function SeeHereButton({ href }: Props) {
         shadow-md shadow-cyan-500 hover:animate-move-y focus:border-cyan-300 focus:outline-none 
         focus:ring-2 focus:ring-cyan-300 focus:ring-opacity-50`}
     >
-      <span className="hidden sm:block">Veja aqui</span>
+      <span className="hidden sm:block">{t('common.seeHere')}</span>
       <FaExternalLinkAlt />
     </a>
   );

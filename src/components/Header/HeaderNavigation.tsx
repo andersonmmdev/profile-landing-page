@@ -1,8 +1,11 @@
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { navigation } from './data/navigation';
 
 export function HeaderNavigation() {
+  const { t } = useTranslation();
+
   useEffect(() => {
     const navItems = document.querySelectorAll('.nav-item');
     navItems.forEach((item, index) => {
@@ -25,7 +28,7 @@ export function HeaderNavigation() {
               hover:text-cyan-300 focus:border-cyan-300 focus:outline-none focus:ring-2 
               focus:ring-cyan-300 focus:ring-opacity-50 xl:text-3xl`}
               >
-                {item.text}
+                {t(item.text)}
               </a>
             </li>
           ))}

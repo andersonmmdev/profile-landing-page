@@ -1,11 +1,10 @@
 export const experiences = [
   {
-    role: 'Desenvolvedor Sênior',
+    role: 'experience.seniorDeveloper',
     company: 'GRUPO RBS',
-    period: '2025 - Atualmente',
+    period: `2025 - ${new Date().getFullYear()}`,
     link: 'https://www.gruporbs.com.br/',
-    description:
-      'Atuo como desenvolvedor no time de B2B para implementação de um fluxo completo de aquisição de conteúdo via Pix dentro de um portal de notícias, com integração de um novo gateway de pagamentos e adaptação da arquitetura do produto para suportar segmentação de matérias para venda individual.',
+    description: 'experience.descriptionRbs',
     stack: [
       'Javascript',
       'React',
@@ -18,12 +17,11 @@ export const experiences = [
     ],
   },
   {
-    role: 'Desenvolvedor Sênior',
+    role: 'experience.seniorDeveloper',
     company: 'GENIALNET GESTÃO E TECNOLOGIA',
     period: '2023 - 2025',
     link: 'https://genialnet.inf.br/',
-    description:
-      'Atuei como desenvolvedor na modernização de um sistema Web de gestão de processos com foco na produção de refeições coletivas. Os principais desafios técnicos incluem a integração de múltiplos módulos complexos, como Planejamento, Análise de Custos, Emissão de Notas Fiscais, MD-e, PDV e outros, em uma única plataforma coesa. A necessidade de escalabilidade e segurança robusta também é crucial, especialmente ao lidar com grandes volumes de dados. Além da ênfase na responsividade e acessibilidade para atender aos padrões modernos de usabilidade e inclusão, proporcionando uma experiência otimizada para todos os usuários.',
+    description: 'experience.descriptionGenialnet',
     stack: [
       'TypeScript',
       'React',
@@ -38,12 +36,11 @@ export const experiences = [
     ],
   },
   {
-    role: 'Desenvolvedor Pleno',
+    role: 'experience.developer',
     company: 'AGRTEC SISTEMA DE INTERMEDIAÇÃO DE NEGÓCIOS',
     period: '2022 - 2023',
     link: 'https://agrtec.com.br/',
-    description:
-      'Atuei na concepção e desenvolvimento de um aplicativo e-commerce focado em produtos do agronegócio. Também participei ativamente na implementação de uma dashboard para gestão de pedidos, fornecedores e usuários. Durante o projeto, integrei diversas APIs de commodities, previsão do tempo, pagamentos e notícias para enriquecer as funcionalidades do aplicativo.',
+    description: 'experience.descriptionAgrtec',
     stack: [
       'TypeScript',
       'Node',
@@ -58,12 +55,11 @@ export const experiences = [
     ],
   },
   {
-    role: 'Desenvolvedor Júnior',
+    role: 'experience.juniorDeveloper',
     company: 'GESEC SISTEMAS',
     period: '2020 - 2022',
     link: 'https://www.gesec.com.br/',
-    description:
-      'Atuei no desenvolvimento de uma aplicação VMS (Sistema de Gerenciamento de Vídeo), em um aplicativo móvel voltado para cidades inteligentes e uma aplicação web para gestão de acesso de pessoas e veículos. Durante o projeto, realizei integrações essenciais com câmeras e sensores, além de trabalhar intensamente com processamento avançado de imagens para assegurar a eficácia e precisão das funcionalidades implementadas. Colaborei ativamente com a equipe para garantir a integridade e a segurança dos dados, além de otimizar o desempenho da aplicação para atender às demandas complexas de um ambiente urbano moderno.',
+    description: 'experience.descriptionGesec',
     stack: [
       'Javascript',
       'Python',
@@ -83,12 +79,11 @@ export const experiences = [
     ],
   },
   {
-    role: 'Estágio de Analista de Testes',
+    role: 'experience.internQaAnalyst',
     company: 'GEOSAPIENS TECNOLOGIA E INFORMACAO',
     period: '2019 - 2020',
     link: 'https://www.web.coletum.com/',
-    description:
-      'Atuei como estagiário na equipe de QA, onde participei do levantamento de requisitos, da criação de planos de teste e do desenvolvimento de testes automatizados E2E para as plataformas web e mobile da empresa.',
+    description: 'experience.descriptionGeosapiens',
     stack: ['Javascript', 'Appium', 'Selenium', 'CodeceptJS', 'MochaJS'],
   },
 ];

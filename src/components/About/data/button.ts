@@ -11,7 +11,7 @@ export const buttons = [
     ariaLabel: 'Send an email',
   },
   {
-    href: 'https://github.com/Andersonmdev',
+    href: 'https://github.com/andersonmmdev',
     animationData: githubAnimation,
     ariaLabel: 'Visit my GitHub',
   },

@@ -1,16 +1,20 @@
+import { useTranslation } from 'react-i18next';
+
+import { Chip } from '../shared/Chip';
+import { SectionTitle } from '../shared/SectionTitle';
 import { AnimatedCard } from '../shared/AnimatedCard';
 import { SeeHereButton } from '../shared/SeeHereButton';
 
-import { freelances } from './data/freelances';
 import { projects } from './data/projects';
-import { Chip } from '../shared/Chip';
-import { SectionTitle } from '../shared/SectionTitle';
+import { freelances } from './data/freelances';
 
 export default function Projects() {
+  const { t } = useTranslation();
+
   return (
     <section id="projects" className="flex flex-col gap-8 sm:gap-12 xl:gap-16">
       <div className="flex flex-col gap-8">
-        <SectionTitle text="Projetos freelance" animated />
+        <SectionTitle text={t('projects.title')} animated />
         <div className="mb-4 flex flex-wrap justify-center gap-8">
           {freelances.map((freelance, index) => (
             <AnimatedCard
@@ -20,10 +24,10 @@ export default function Projects() {
               <div className="flex h-full flex-col justify-between gap-3">
                 <div>
                   <h3 className="mt-1 text-2xl font-bold text-cyan-600">
-                    {freelance.title}
+                    {t(freelance.title)}
                   </h3>
                   <p className="mt-2 text-pretty text-justify text-slate-100">
-                    {freelance.description}
+                    {t(freelance.description)}
                   </p>
                   <div className="mt-1">
                     {freelance.stack.map((tech) => (
@@ -39,11 +43,6 @@ export default function Projects() {
               </div>
             </AnimatedCard>
           ))}
-        </div>
-      </div>
-      <div className="flex flex-col gap-8">
-        <SectionTitle text="Projetos pessoais" animated />
-        <div className="mb-4 flex flex-wrap justify-center gap-8">
           {projects.map((project, index) => (
             <AnimatedCard
               key={index}
@@ -52,11 +51,16 @@ export default function Projects() {
               <div className="flex h-full flex-col justify-between gap-3">
                 <div>
                   <h3 className="mt-1 text-2xl font-bold text-cyan-600">
-                    {project.title}
+                    {t(project.title)}
                   </h3>
                   <p className="mt-2 text-justify text-slate-100">
-                    {project.description}
+                    {t(project.description)}
                   </p>
+                </div>
+                <div className="mt-1">
+                  {project.stack.map((tech) => (
+                    <Chip key={tech} text={tech} />
+                  ))}
                 </div>
                 <SeeHereButton href={project.link} />
               </div>
@@ -65,7 +69,7 @@ export default function Projects() {
         </div>
         <div>
           <p>
-            * Para mais projetos acesse meu perfil no{' '}
+            * {t('projects.seeMore')}{' '}
             <a
               href="/"
               target="_blank"
