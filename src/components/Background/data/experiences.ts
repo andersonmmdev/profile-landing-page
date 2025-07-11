@@ -17,7 +17,7 @@ export const experiences = [
     ],
   },
   {
-    role: 'experience.seniorDeveloper',
+    role: 'experience.developer',
     company: 'GENIALNET GESTÃO E TECNOLOGIA',
     period: '2023 - 2025',
     link: 'https://genialnet.inf.br/',
